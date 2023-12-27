@@ -29,6 +29,7 @@ namespace MediSync_Project
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Medicine));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Back = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
@@ -60,10 +61,10 @@ namespace MediSync_Project
             // 
             // Back
             // 
-            this.Back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(77)))), ((int)(((byte)(57)))));
-            this.Back.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Back.BackColor = System.Drawing.Color.Navy;
+            this.Back.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Back.ForeColor = System.Drawing.Color.White;
-            this.Back.Location = new System.Drawing.Point(38, 391);
+            this.Back.Location = new System.Drawing.Point(51, 388);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(97, 29);
             this.Back.TabIndex = 16;
@@ -73,10 +74,10 @@ namespace MediSync_Project
             // 
             // Delete
             // 
-            this.Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(77)))), ((int)(((byte)(57)))));
-            this.Delete.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Delete.BackColor = System.Drawing.Color.Navy;
+            this.Delete.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Delete.ForeColor = System.Drawing.Color.White;
-            this.Delete.Location = new System.Drawing.Point(220, 320);
+            this.Delete.Location = new System.Drawing.Point(222, 320);
             this.Delete.Name = "Delete";
             this.Delete.Size = new System.Drawing.Size(97, 29);
             this.Delete.TabIndex = 17;
@@ -86,8 +87,8 @@ namespace MediSync_Project
             // 
             // Update
             // 
-            this.Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(77)))), ((int)(((byte)(57)))));
-            this.Update.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Update.BackColor = System.Drawing.Color.Navy;
+            this.Update.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Update.ForeColor = System.Drawing.Color.White;
             this.Update.Location = new System.Drawing.Point(117, 320);
             this.Update.Name = "Update";
@@ -99,8 +100,8 @@ namespace MediSync_Project
             // 
             // Add
             // 
-            this.Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(77)))), ((int)(((byte)(57)))));
-            this.Add.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add.BackColor = System.Drawing.Color.Navy;
+            this.Add.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add.ForeColor = System.Drawing.Color.White;
             this.Add.Location = new System.Drawing.Point(14, 320);
             this.Add.Name = "Add";
@@ -120,10 +121,10 @@ namespace MediSync_Project
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Silver;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(144)))), ((int)(((byte)(114)))));
-            this.label5.Location = new System.Drawing.Point(16, 5);
+            this.label5.Location = new System.Drawing.Point(12, 5);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(307, 46);
             this.label5.TabIndex = 9;
@@ -132,6 +133,7 @@ namespace MediSync_Project
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(12, 184);
@@ -143,6 +145,7 @@ namespace MediSync_Project
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(183, 114);
@@ -154,6 +157,7 @@ namespace MediSync_Project
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(9, 114);
@@ -165,6 +169,7 @@ namespace MediSync_Project
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(183, 56);
@@ -176,6 +181,7 @@ namespace MediSync_Project
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 55);
@@ -215,10 +221,10 @@ namespace MediSync_Project
             // 
             // Billing
             // 
-            this.Billing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(77)))), ((int)(((byte)(57)))));
-            this.Billing.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Billing.BackColor = System.Drawing.Color.Navy;
+            this.Billing.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Billing.ForeColor = System.Drawing.Color.White;
-            this.Billing.Location = new System.Drawing.Point(174, 391);
+            this.Billing.Location = new System.Drawing.Point(174, 388);
             this.Billing.Name = "Billing";
             this.Billing.Size = new System.Drawing.Size(97, 29);
             this.Billing.TabIndex = 21;
@@ -230,6 +236,8 @@ namespace MediSync_Project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(891, 491);
             this.Controls.Add(this.Billing);
             this.Controls.Add(this.dataGridView1);

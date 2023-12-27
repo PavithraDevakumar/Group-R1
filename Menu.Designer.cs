@@ -33,17 +33,18 @@ namespace MediSync_Project
             this.Billing = new System.Windows.Forms.Label();
             this.Medicine = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.LogOut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Billing
             // 
             this.Billing.AutoSize = true;
             this.Billing.BackColor = System.Drawing.Color.Transparent;
-            this.Billing.Font = new System.Drawing.Font("Kristen ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Billing.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Billing.ForeColor = System.Drawing.Color.Transparent;
             this.Billing.Location = new System.Drawing.Point(527, 184);
             this.Billing.Name = "Billing";
-            this.Billing.Size = new System.Drawing.Size(121, 44);
+            this.Billing.Size = new System.Drawing.Size(119, 44);
             this.Billing.TabIndex = 4;
             this.Billing.Text = "Billing";
             this.Billing.Click += new System.EventHandler(this.Billing_Click);
@@ -52,11 +53,11 @@ namespace MediSync_Project
             // 
             this.Medicine.AutoSize = true;
             this.Medicine.BackColor = System.Drawing.Color.Transparent;
-            this.Medicine.Font = new System.Drawing.Font("Kristen ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Medicine.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Medicine.ForeColor = System.Drawing.Color.Transparent;
             this.Medicine.Location = new System.Drawing.Point(132, 184);
             this.Medicine.Name = "Medicine";
-            this.Medicine.Size = new System.Drawing.Size(283, 44);
+            this.Medicine.Size = new System.Drawing.Size(249, 44);
             this.Medicine.TabIndex = 3;
             this.Medicine.Text = "Medicine Stock";
             this.Medicine.Click += new System.EventHandler(this.Medicine_Click);
@@ -74,6 +75,17 @@ namespace MediSync_Project
             this.label1.Text = "Main Menu";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // LogOut
+            // 
+            this.LogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogOut.Location = new System.Drawing.Point(19, 398);
+            this.LogOut.Name = "LogOut";
+            this.LogOut.Size = new System.Drawing.Size(91, 31);
+            this.LogOut.TabIndex = 6;
+            this.LogOut.Text = "LogOut";
+            this.LogOut.UseVisualStyleBackColor = true;
+            this.LogOut.Click += new System.EventHandler(this.LogOut_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -82,11 +94,14 @@ namespace MediSync_Project
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LogOut);
             this.Controls.Add(this.Billing);
             this.Controls.Add(this.Medicine);
             this.Controls.Add(this.label1);
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,5 +112,6 @@ namespace MediSync_Project
         private System.Windows.Forms.Label Billing;
         private System.Windows.Forms.Label Medicine;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button LogOut;
     }
 }

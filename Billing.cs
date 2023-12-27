@@ -13,7 +13,7 @@ namespace MediSync_Project
 {
     public partial class Billing : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ruchi\OneDrive\Documents\MedStock_db.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\pavit\OneDrive\Desktop\MediSync_Project\bin\Resources\MedStock_db.mdf;Integrated Security=True;Connect Timeout=30");
         public void populatecombobox() 
         {
             String sql = "select * from Med_Table1";
@@ -67,6 +67,7 @@ namespace MediSync_Project
         public Billing()
         {
             InitializeComponent();
+            this.FormClosing += new FormClosingEventHandler(Billing_FormClosing);
         }
 
         private void Billing_Load(object sender, EventArgs e)
@@ -141,6 +142,11 @@ namespace MediSync_Project
                 TotalAmmount.Text = "Rs. " + GrdTotal;
                 updateMedicine();
             }
+        }
+        private void Billing_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            System.Windows.Forms.Application.Exit();
         }
     }
 }

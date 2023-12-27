@@ -53,8 +53,8 @@ namespace MediSync_Project
             // 
             // AddToBill
             // 
-            this.AddToBill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(77)))), ((int)(((byte)(57)))));
-            this.AddToBill.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddToBill.BackColor = System.Drawing.Color.Navy;
+            this.AddToBill.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddToBill.ForeColor = System.Drawing.Color.White;
             this.AddToBill.Location = new System.Drawing.Point(47, 306);
             this.AddToBill.Name = "AddToBill";
@@ -67,7 +67,7 @@ namespace MediSync_Project
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Silver;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(144)))), ((int)(((byte)(114)))));
             this.label5.Location = new System.Drawing.Point(9, 9);
@@ -89,6 +89,7 @@ namespace MediSync_Project
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 78);
@@ -100,6 +101,7 @@ namespace MediSync_Project
             // avilableStock
             // 
             this.avilableStock.AutoSize = true;
+            this.avilableStock.BackColor = System.Drawing.Color.Transparent;
             this.avilableStock.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.avilableStock.ForeColor = System.Drawing.Color.Black;
             this.avilableStock.Location = new System.Drawing.Point(13, 136);
@@ -119,6 +121,7 @@ namespace MediSync_Project
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(13, 197);
@@ -171,9 +174,9 @@ namespace MediSync_Project
             // TotalAmmount
             // 
             this.TotalAmmount.AutoSize = true;
-            this.TotalAmmount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(227)))), ((int)(((byte)(206)))));
+            this.TotalAmmount.BackColor = System.Drawing.Color.Transparent;
             this.TotalAmmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalAmmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(144)))), ((int)(((byte)(114)))));
+            this.TotalAmmount.ForeColor = System.Drawing.Color.Black;
             this.TotalAmmount.Location = new System.Drawing.Point(284, 374);
             this.TotalAmmount.Name = "TotalAmmount";
             this.TotalAmmount.Size = new System.Drawing.Size(304, 46);
@@ -182,8 +185,8 @@ namespace MediSync_Project
             // 
             // Printbtn
             // 
-            this.Printbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(77)))), ((int)(((byte)(57)))));
-            this.Printbtn.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Printbtn.BackColor = System.Drawing.Color.Navy;
+            this.Printbtn.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Printbtn.ForeColor = System.Drawing.Color.White;
             this.Printbtn.Location = new System.Drawing.Point(647, 391);
             this.Printbtn.Name = "Printbtn";
@@ -195,8 +198,8 @@ namespace MediSync_Project
             // 
             // HomeBtn
             // 
-            this.HomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(77)))), ((int)(((byte)(57)))));
-            this.HomeBtn.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeBtn.BackColor = System.Drawing.Color.Navy;
+            this.HomeBtn.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeBtn.ForeColor = System.Drawing.Color.White;
             this.HomeBtn.Location = new System.Drawing.Point(47, 391);
             this.HomeBtn.Name = "HomeBtn";
@@ -226,6 +229,8 @@ namespace MediSync_Project
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(227)))), ((int)(((byte)(206)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(891, 491);
             this.Controls.Add(this.HomeBtn);
             this.Controls.Add(this.Printbtn);

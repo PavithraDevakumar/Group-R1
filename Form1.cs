@@ -36,9 +36,9 @@ namespace MediSync_Project
             {
                 progressBar1.Value = 0;
                 timer1.Stop();
-                Menu menu = new Menu();
+                Login_Form f1 = new Login_Form();
                 this.Hide();
-                menu.Show();
+                f1.Show();
             }
 
         }

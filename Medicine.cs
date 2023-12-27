@@ -14,7 +14,7 @@ namespace MediSync_Project
     
     public partial class Medicine : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ruchi\OneDrive\Documents\MedStock_db.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\pavit\OneDrive\Desktop\MediSync_Project\bin\Resources\MedStock_db.mdf;Integrated Security=True;Connect Timeout=30");
         public Medicine()
         {
             InitializeComponent();
@@ -75,10 +75,7 @@ namespace MediSync_Project
                 
             }
             
-            /*MedName.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            Bp.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            Sp.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-            Qty.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();*/
+            
         }
 
         private void Update_Click(object sender, EventArgs e)
@@ -125,14 +122,7 @@ namespace MediSync_Project
             bil.Show();
             this.Hide();
         }
-        /* private void Medicine_FormClosing(object sender, FormClosingEventArgs e)
-         {
-              //System.Windows.Forms.Application.Exit();
-              string message = "Simple MessageBox";
-              string title = "Title";
-              MessageBox.Show(message, title);
-         }
-        */
+        
 
         private void Medicine_FormClosing(object sender, FormClosingEventArgs e)
         {

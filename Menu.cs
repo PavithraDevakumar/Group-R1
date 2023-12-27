@@ -15,6 +15,7 @@ namespace MediSync_Project
         public Menu()
         {
             InitializeComponent();
+            this.FormClosing += new FormClosingEventHandler(Menu_FormClosing);
         }
 
         private void Medicine_Click(object sender, EventArgs e)
@@ -37,10 +38,22 @@ namespace MediSync_Project
             this.Hide();
         }
 
+        
+        private void Menu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void LogOut_Click(object sender, EventArgs e)
         {
-            LoginForm form = new LoginForm();
-            form.Show();
+            Login_Form f1 = new Login_Form();
+            f1.Show();
             this.Hide();
         }
     }
